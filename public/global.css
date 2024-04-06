@@ -1,0 +1,165 @@
+/* Estilos para el cuerpo de la página */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000; /* Fondo negro */
+  color: #2ecc71; /* Letras verdes */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* Estilos para el título principal */
+h1 {
+  text-align: center;
+  color: #2ecc71; /* Letras verdes */
+  font-size: 32px; /* Tamaño del título */
+  font-weight: bold; /* Negrita */
+  text-transform: uppercase; /* Mayúsculas */
+  text-shadow: 8px 8px 16px rgba(4, 253, 83, 0.909); /* Sombra del texto */
+}
+
+/* Estilos para las tarjetas de posts */
+.post-card {
+  background-color: #333; /* Fondo negro */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el título de los posts */
+.post-card h2 {
+  color: #2ecc71; /* Letras verdes */
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold; /* Negrita */
+  text-shadow: 1px 1px 2px rgb(255, 255, 0); /* Sombra del texto */
+}
+
+/* Estilos para el cuerpo de los posts */
+.post-card p {
+  color: #2ecc71; /* Letras verdes */
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Estilos para el enlace de detalles */
+.post-card a {
+  color: #3498db; /* Enlace azul claro */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.post-card a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para el encabezado */
+.header {
+  background-color: #333; /* Fondo plomo */
+  color: #000; /* Texto negro */
+  padding: 20px 0;
+  text-align: left !important; /* Alineación a la izquierda */
+  height: 80px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 35px;
+  text-align: left;
+  font-weight: bold; /* Negrita */
+  text-shadow: 2px 2px 4px rgba(145, 255, 0, 0.841); /* Sombra del texto */
+}
+
+/* Estilos para la barra de navegación */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #000; /* Texto negro */
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(255, 2, 2, 0.826);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Estilos para el menú */
+.menu {
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Elimina el margen predeterminado */
+}
+
+.menu ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.menu ul li:last-child {
+  margin-right: 0;
+}
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold; /* Negrita */
+  text-shadow: 1px 1px 2px rgba(0, 255, 251, 0.838); /* Sombra del texto */
+}
+
+.menu ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para el footer */
+.footer {
+  background-color: #333; /* Fondo oscuro */
+  color: #fff; /* Texto blanco */
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}

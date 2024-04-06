@@ -1,0 +1,32 @@
+---
+// Importa los módulos necesarios
+import PostCard from '../components/PostCard.astro';
+import type {Post} from '../pages/types/Post';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+const posts= await res.json();
+
+---
+
+<!-- Ejemplo en src/layouts/BaseLayout.astro -->
+<html>
+<head>
+  <title>Mi Blog en Astro</title>
+  <link rel="stylesheet" href="../public/global.css">
+</head>
+<body>
+  <Header />
+  
+  <div class="container">
+     <!-- Encabezado -->
+    <h1>Bienvenido a mi Blog</h1>
+    <div>
+      {posts.map((post: Post) => (
+        <PostCard key={post.id} post={post} />
+      ))}
+    </div>
+  </div>
+  <Footer />
+</body>
+</html>
